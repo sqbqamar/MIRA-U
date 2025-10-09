@@ -1,6 +1,6 @@
 # MIRA-U: Semi-Supervised Skin Lesion Segmentation
 
-Complete PyTorch implementation of the MIRA-U framework for semi-supervised skin lesion segmentation with uncertainty-aware learning and hybrid CNN-Transformer architecture.
+PyTorch implementation of the MIRA-U framework for semi-supervised skin lesion segmentation with uncertainty-aware learning and hybrid CNN-Transformer architecture.
 
 ## 📋 Table of Contents
 - [Features](#features)
@@ -30,7 +30,7 @@ Complete PyTorch implementation of the MIRA-U framework for semi-supervised skin
 ### Install Dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install -r Requirements.txt
 ```
 
 ## 📁 Dataset Preparation
@@ -62,7 +62,7 @@ data/
 ### Basic Training
 
 ```bash
-python train.py
+python training.py
 ```
 
 ### Custom Configuration
@@ -193,9 +193,9 @@ TTA performs predictions with:
 .
 ├── data_loader.py          # Data loading and augmentation
 ├── model.py                # MIRA-U architecture
-├── train.py                # Training pipeline
+├── training.py                # Training pipeline
 ├── predict.py              # Prediction and evaluation
-├── requirements.txt        # Dependencies
+├── Requirements.txt        # Dependencies
 ├── README.md              # This file
 │
 ├── data/                   # Dataset directory
@@ -319,19 +319,7 @@ w = exp(-σ/κ)
 - Increase `num_workers` (default: 4)
 - Use GPU if available
 - Reduce MC dropout samples during training
-
-## 📚 Citation
-
-If you use this implementation, please cite the original paper:
-
-```bibtex
-@article{qamar2025mira,
-  title={Enhancing Skin Lesion Segmentation: A Hybrid CNN-Transformer Approach with Uncertainty-Aware Learning},
-  author={Qamar, Saqib},
-  journal={Manuscript},
-  year={2025}
-}
-```
+- 
 
 ## 📄 License
 
